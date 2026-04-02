@@ -33,7 +33,7 @@ pipeline {
 
     post {
         success {
-            archiveArtifacts artifacts: 'dist/**/*', fingerprint: true, allowEmptyArchive: false
+            archiveArtifacts artifacts: 'my-react-reactapp/dist/**/*', fingerprint: true, allowEmptyArchive: false
         }
         failure {
             echo 'Pipeline failed - view log each stage (Install & Lint & Build)'
